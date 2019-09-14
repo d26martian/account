@@ -24,19 +24,19 @@
               <form>
                 <input type="text" class="header__input" />
               </form>
+              <a href="#" class="header__icon-search"></a>
             </div>
             <div class="header__btn-group">
-              <a href="#" class="header__icon-search"></a>
               <a href="#" class="header__icon-menu sys_menu">
                 <span></span>
                 <span></span>
                 <span></span>
               </a>
             </div>
-            <div class="header__account">
+            <a class="header__account sys_btn-modal">
               <span class="header__account-text">Добавить</span>
-              <a href="#" class="header__account-img"></a>
-            </div>
+              <div class="header__account-img"></div>
+            </a>
             <div class="header__menu-dropdown sys_menu-dropdown">
               <ul class="header__menu-list">
                 <li class="header__menu-item">
@@ -78,12 +78,11 @@
               </div>
             </div>
             <div class="card__card-info">
-              <div class="card__row">
-                <div class="card__col">
-                  <div class="card__location">
-                    <span>Москва</span>
-                  </div>
+              <div class="card__row card__row--info">
+                <div class="card__location">
+                  <span>Москва</span>
                 </div>
+
                 <div class="card__col">
                   <div class="card__account">
                     <div class="card__photo">
@@ -110,12 +109,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="card__col">
-                  <div class="card__option">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
+
+                <div class="card__option">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
               </div>
             </div>
@@ -166,7 +164,59 @@
           </ul>
         </div>
       </div>
+      <div class="slider">
+        <div class="container">
+          <div class="slider__slide slider__slide--one sys_slide">
+            <div class="slider__content">
+              <span>Image One</span>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--two sys_slide">
+            <div class="slider__content">
+              <span>Image Two</span>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--three sys_slide">
+            <div class="slider__content">
+              <span>Image Three</span>
+            </div>
+          </div>
+          <div class="slider__arrow slider__arrow--right sys_arrowR"></div>
+          <div class="slider__arrow slider__arrow--left sys_arrowL"></div>
+        </div>
+      </div>
     </main>
+
+    <div class="modal fade sys_modal">
+      <div class="modal__body">
+          <div class="modal__header">
+            <h3>Введите данные</h3>
+            <div class="modal__close">
+              <span class="modal__btn-cls sys_btn-close"></span>
+            </div>
+          </div>
+          <div class="modal__content">
+            <form action="" class="form">
+              <div class="form__group">
+                <div class="form__control">
+                  <input type="text" placeholder="Введите данные">
+                </div>
+              </div>
+              <div class="form__group">
+                  <div class="form__control">
+                    <input type="text" placeholder="Введите данные">
+                  </div>
+                </div>
+                <div class="form__group">
+                    <div class="form__button">
+                      <button type="submit">Отправить</button>
+                    </div>
+                  </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__row">
